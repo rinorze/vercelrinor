@@ -1,0 +1,55 @@
+@import '../../styles/main.scss';
+
+.about {
+  background-color: lighten($primary-color, 5%);
+  
+  &-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap; // Allow items to wrap on smaller screens
+  }
+  
+  &-text {
+    flex: 1;
+    min-width: 300px; // Set a minimum width for better responsiveness
+
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+  }
+  
+  &-image {
+    flex: 1;
+    min-width: 250px; // Set a minimum width for better responsiveness
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  // Media Queries for Responsiveness
+  @media (max-width: 768px) {
+    &-content {
+      flex-direction: column; // Stack items vertically on smaller screens
+      align-items: center; // Center align items
+    }
+
+    &-text {
+      text-align: center; // Center text on smaller screens
+    }
+  }
+
+  @media (max-width: 480px) {
+    &-text {
+      p {
+        font-size: 1rem; // Adjust font size for smaller screens
+      }
+    }
+  }
+}

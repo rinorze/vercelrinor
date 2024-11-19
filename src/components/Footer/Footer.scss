@@ -1,0 +1,94 @@
+@import '../../styles/main.scss';
+
+.footer {
+  background-color: darken($primary-color, 5%);
+  padding: 3rem 0;
+  
+  &-content {
+    text-align: center;
+    padding: 0 1rem; // Add horizontal padding for smaller screens
+  }
+  
+  &-info {
+    margin-bottom: 1.5rem;
+    
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    p {
+      color: darken($text-color, 20%);
+      font-size: 1rem; // Set a base font size for readability
+    }
+  }
+  
+  &-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+    a {
+      color: $text-color;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+      
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+  
+  &-copyright {
+    color: darken($text-color, 30%);
+    font-size: 0.9rem;
+  }
+
+  // Media Queries for Responsiveness
+  @media (max-width: 768px) {
+    &-info {
+      h3 {
+        font-size: 1.3rem; // Slightly smaller font size for smaller screens
+      }
+      
+      p {
+        font-size: 0.9rem; // Adjust paragraph font size for better readability
+      }
+    }
+
+    &-social {
+      flex-direction: column; // Stack social links vertically on smaller screens
+      align-items: center; // Center align the items
+      gap: 1rem; // Adjust gap for better spacing
+    }
+
+    &-copyright {
+      font-size: 0.8rem; // Adjust copyright font size for smaller screens
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem 0; // Reduce padding for very small screens
+
+    &-info {
+      h3 {
+        font-size: 1.2rem; // Further reduce font size for the title
+      }
+      
+      p {
+        font-size: 0.85rem; // Further adjust paragraph font size
+      }
+    }
+
+    &-social {
+      a {
+        font-size: 1.3rem; // Adjust social icon size for smaller screens
+      }
+    }
+
+    &-copyright {
+      font-size: 0.75rem; // Further adjust copyright font size
+    }
+  }
+}

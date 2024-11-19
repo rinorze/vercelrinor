@@ -1,0 +1,56 @@
+// Variables
+$primary-color: #1a1a1a;
+$secondary-color: #333;
+$accent-color: #646cff;
+$text-color: #fff;
+$grey-bg: #242424;
+
+// Reset & Base styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: $grey-bg;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+// Button styles
+.btn {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &-primary {
+    background-color: $accent-color;
+    color: $text-color;
+    
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+}
+
+// Section styles
+.section {
+  padding: 5rem 0;
+  
+  &-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,82 @@
+@import '../../styles/main.scss';
+
+.contact {
+  background-color: $primary-color;
+  
+  &-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem; // Add some padding for better spacing on smaller screens
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Optional: Add shadow for aesthetics
+    border-radius: 10px; // Optional: Add border radius for aesthetics
+  }
+  
+  &-form {
+    .form-group {
+      margin-bottom: 1.5rem;
+      
+      input,
+      textarea {
+        width: 100%;
+        padding: 1rem;
+        background-color: lighten($primary-color, 5%);
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        color: $text-color;
+        font-size: 1rem;
+        
+        &:focus {
+          outline: none;
+          border-color: $accent-color;
+        }
+      }
+      
+      textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+    }
+    
+    button {
+      width: 100%;
+      padding: 1rem; // Add padding for better touch targets on mobile
+      background-color: $accent-color; // Optional: Add background color
+      color: white; // Optional: Text color for better contrast
+      border: none; // Optional: Remove default border
+      border-radius: 5px; // Optional: Rounded corners for button
+      font-size: 1rem; // Optional: Font size for button
+      cursor: pointer; // Change cursor on hover
+
+      &:hover {
+        background-color: darken($accent-color, 10%); // Optional: Darken on hover
+      }
+    }
+  }
+
+  // Media Queries for Responsiveness
+  @media (max-width: 768px) {
+    &-content {
+      padding: 1rem; // Reduce padding on smaller screens
+    }
+    
+    .form-group {
+      input,
+      textarea {
+        font-size: 0.9rem; // Slightly smaller font size on smaller screens
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    &-content {
+      padding: 0.5rem; // Further reduce padding on very small screens
+    }
+    
+    .form-group {
+      input,
+      textarea {
+        font-size: 0.8rem; // Adjust font size for better readability
+      }
+    }
+  }
+}

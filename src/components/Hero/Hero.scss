@@ -1,0 +1,116 @@
+@import '../../styles/main.scss';
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: $primary-color;
+  padding-top: 80px;
+  padding-bottom: 2rem;
+  
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem; // Add horizontal padding for smaller screens
+  }
+  
+  &-text {
+    flex: 1;
+    
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      font-size: 1.5rem;
+      color: darken($text-color, 20%);
+      margin-bottom: 2rem;
+    }
+  }
+  
+  &-image {
+    flex: 1;
+    
+    img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    
+    a {
+      color: $text-color;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+      
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+
+  // Media Queries for Responsiveness
+  @media (max-width: 768px) {
+    &-content {
+      flex-direction: column; // Stack content vertically on smaller screens
+      align-items: center; // Center align items
+    }
+
+    &-text {
+      text-align: center; // Center text on smaller screens
+      
+      h1 {
+        font-size: 2.5rem; // Reduce font size for smaller screens
+      }
+      
+      p {
+        font-size: 1.2rem; // Reduce paragraph font size
+      }
+    }
+
+    &-image {
+      margin-top: 2rem; // Add some margin to separate image from text
+    }
+
+    .social-links {
+      flex-direction: column; // Stack social links vertically
+      align-items: center; // Center align social links
+      gap: 1rem; // Adjust gap for better spacing
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 60px; // Reduce padding on very small screens
+
+    &-text {
+      h1 {
+        font-size: 2rem; // Further reduce font size for the title
+      }
+      
+      p {
+        font-size: 1rem; // Further adjust paragraph font size
+      }
+    }
+
+    &-image {
+      img {
+        max-width: 100%; // Ensure image scales down on very small screens
+      }
+    }
+
+    .social-links {
+      a {
+        font-size: 1.2rem; // Adjust social icon size for smaller screens
+      }
+    }
+  }
+}
