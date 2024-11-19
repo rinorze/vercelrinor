@@ -4,7 +4,7 @@ import "./Works.scss"; // Ensure this file exists and is correctly styled
 // Import your images from the assets folder
 import img1 from "./chrome_5lWp4MIe1K.png"; // Adjust the path if necessary
 import img2 from "./chrome_oTJcyHVUvX.png";
-import img3 from "./chrome_5UHQc2CeUy.png";
+import img3 from "./chrome_zFlzVHJNlZ.png";
 import img4 from "./chrome_BDh7pU7OuH.png";
 import img5 from "./chrome_F2pEvkWvbb.png";
 
@@ -23,10 +23,10 @@ const Works = () => {
       link: "https://lively-florentine-497084.netlify.app/"
     },
     {
-      title: "NZXT Clone",
-      description: "A NZXT Clone Web Application",
+      title: "Smart Home",
+      description: "A Real Estate Website",
       image: img3,
-      link: "https://spectacular-trifle-022660.netlify.app/"
+      link: "https://glowing-profiterole-755770.netlify.app/"
     },
     {
       title: "Cake",
