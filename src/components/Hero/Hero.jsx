@@ -34,7 +34,9 @@ const Hero = () => {
               <FaTwitter />
             </a>
           </div>
-          <button className="btn btn-primary">Contact Me</button>
+          <a href="contact" className="btn btn-primary">
+            Contact Me
+          </a>
         </div>
         <div className="hero-image">
           <img src={img} alt="Rinor Zeqiri" />
