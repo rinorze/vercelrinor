@@ -22,7 +22,7 @@
     
     h1 {
       font-size: 3.5rem;
-      margin-bottom: 1rem;
+      margin: 0;
     }
     
     p {
@@ -90,7 +90,7 @@
   }
 
   @media (max-width: 480px) {
-    padding-top: 60px; // Reduce padding on very small screens
+    padding-top: 6rem; // Reduce padding on very small screens
 
     &-text {
       h1 {
