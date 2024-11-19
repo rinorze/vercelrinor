@@ -34,7 +34,7 @@ const Hero = () => {
               <FaTwitter />
             </a>
           </div>
-          <a href="contact" className="btn btn-primary">
+          <a href="#contact" className="btn btn-primary">
             Contact Me
           </a>
         </div>
@@ -47,3 +47,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
