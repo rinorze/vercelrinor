@@ -11,31 +11,31 @@ import img5 from "./chrome_F2pEvkWvbb.png";
 const Works = () => {
   const projects = [
     {
-      title: "Project 1",
+      title: "EvoSchool",
       description: "A School Web Aplication",
       image: img1,
-      link: "https://spectacular-trifle-022660.netlify.app/"
+      link: "https://classy-maamoul-aabc8f.netlify.app"
     },
     {
-      title: "Project 2",
+      title: "Pathway",
       description: "A Pathway Web Application",
       image: img2,
       link: "https://lively-florentine-497084.netlify.app/"
     },
     {
-      title: "Project 3",
+      title: "NZXT Clone",
       description: "A NZXT Clone Web Application",
       image: img3,
       link: "https://spectacular-trifle-022660.netlify.app/"
     },
     {
-      title: "Project 4",
+      title: "Cake",
       description: "A Cake Web Application",
       image: img5,
       link: "https://glowing-cucurucho-fa007d.netlify.app/"
     },
     {
-      title: "Project 5",
+      title: "Business Casual",
       description: "A Cafe Web Application",
       image: img4,
       link: "https://iridescent-kleicha-76cf54.netlify.app"
