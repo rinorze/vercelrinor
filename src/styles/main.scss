@@ -36,11 +36,11 @@ body {
   text-decoration: none;
   
   &-primary {
-    background-color: $accent-color;
-    color: $text-color;
+    background-color: #e6e6e6;
+    color: black;
     
     &:hover {
-      background-color: darken($accent-color, 10%);
+      background-color: #a7a7a7;
     }
   }
 }
