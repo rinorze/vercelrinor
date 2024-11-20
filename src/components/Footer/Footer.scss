@@ -6,7 +6,7 @@
   
   &-content {
     text-align: center;
-    padding: 0 1rem; // Add horizontal padding for smaller screens
+    padding: 0 1rem;
   }
   
   &-info {
@@ -19,7 +19,7 @@
     
     p {
       color: darken($text-color, 20%);
-      font-size: 1rem; // Set a base font size for readability
+      font-size: 1rem; 
     }
   }
   
@@ -45,49 +45,48 @@
     font-size: 0.9rem;
   }
 
-  // Media Queries for Responsiveness
   @media (max-width: 768px) {
     &-info {
       h3 {
-        font-size: 1.3rem; // Slightly smaller font size for smaller screens
+        font-size: 1.3rem; 
       }
       
       p {
-        font-size: 0.9rem; // Adjust paragraph font size for better readability
+        font-size: 0.9rem;
       }
     }
 
     &-social {
-      align-items: center; // Center align the items
-      gap: 1rem; // Adjust gap for better spacing
+      align-items: center;
+      gap: 1rem;
     }
 
     &-copyright {
-      font-size: 0.8rem; // Adjust copyright font size for smaller screens
+      font-size: 0.8rem; 
     }
   }
 
   @media (max-width: 480px) {
-    padding: 2rem 0; // Reduce padding for very small screens
+    padding: 2rem 0; 
 
     &-info {
       h3 {
-        font-size: 1.2rem; // Further reduce font size for the title
+        font-size: 1.2rem; 
       }
       
       p {
-        font-size: 0.85rem; // Further adjust paragraph font size
+        font-size: 0.85rem; 
       }
     }
 
     &-social {
       a {
-        font-size: 1.3rem; // Adjust social icon size for smaller screens
+        font-size: 1.3rem; 
       }
     }
 
     &-copyright {
-      font-size: 0.75rem; // Further adjust copyright font size
+      font-size: 0.75rem; 
     }
   }
 }
