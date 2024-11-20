@@ -2,13 +2,13 @@
 
 .works {
   background-color: lighten($primary-color, 5%);
-  padding: 2rem 0; // Add vertical padding for better spacing
+  padding: 2rem 0; 
 
   &-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    padding: 0 1rem; // Add horizontal padding for smaller screens
+    padding: 0 1rem; 
   }
   
   .work-card {
@@ -38,7 +38,7 @@
       
       h3 {
         margin-bottom: 0.5rem;
-        font-size: 1.5rem; // Ensure consistent font size
+        font-size: 1.5rem; 
       }
       
       p {
@@ -48,22 +48,21 @@
     }
   }
 
-  // Media Queries for Responsiveness
   @media (max-width: 768px) {
     &-grid {
-      gap: 1.5rem; // Reduce gap for smaller screens
+      gap: 1.5rem;
     }
 
     .work-card {
       .work-info {
-        padding: 1.5rem; // Reduce padding for smaller screens
+        padding: 1.5rem;
 
         h3 {
-          font-size: 1.25rem; // Adjust heading size for smaller screens
+          font-size: 1.25rem; 
         }
 
         p {
-          font-size: 0.9rem; // Adjust paragraph size for smaller screens
+          font-size: 0.9rem; 
         }
       }
     }
@@ -71,19 +70,19 @@
 
   @media (max-width: 480px) {
     &-grid {
-      gap: 1rem; // Further reduce gap for very small screens
+      gap: 1rem; 
     }
 
     .work-card {
       .work-info {
-        padding: 1.5rem; // Further reduce padding for very small screens
+        padding: 1.5rem; 
 
         h3 {
-          font-size: 1rem; // Further adjust heading size
+          font-size: 1rem; 
         }
 
         p {
-          font-size: 0.8rem; // Further adjust paragraph size
+          font-size: 0.8rem; 
         }
       }
     }
