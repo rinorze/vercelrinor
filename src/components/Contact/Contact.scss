@@ -6,9 +6,9 @@
   &-content {
     max-width: 600px;
     margin: 0 auto;
-    padding: 2rem; // Add some padding for better spacing on smaller screens
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Optional: Add shadow for aesthetics
-    border-radius: 10px; // Optional: Add border radius for aesthetics
+    padding: 2rem; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
   }
   
   &-form {
@@ -40,44 +40,43 @@
     
     button {
       width: 100%;
-      padding: 1rem; // Add padding for better touch targets on mobile
+      padding: 1rem; 
       background-color: #e6e6e6;
       color: black;
-      border: none; // Optional: Remove default border
-      border-radius: 5px; // Optional: Rounded corners for button
-      font-size: 1rem; // Optional: Font size for button
+      border: none; 
+      border-radius: 5px; 
+      font-size: 1rem;
       cursor: pointer;
       font-family: 'Bricolage Grotesque';
 
       &:hover {
-        background-color: #a7a7a7 // Optional: Darken on hover
+        background-color: #a7a7a7
       }
     }
   }
 
-  // Media Queries for Responsiveness
   @media (max-width: 768px) {
     &-content {
-      padding: 1rem; // Reduce padding on smaller screens
+      padding: 1rem;
     }
     
     .form-group {
       input,
       textarea {
-        font-size: 0.9rem; // Slightly smaller font size on smaller screens
+        font-size: 0.9rem; 
       }
     }
   }
 
   @media (max-width: 480px) {
     &-content {
-      padding: 0.5rem; // Further reduce padding on very small screens
+      padding: 0.5rem; 
     }
     
     .form-group {
       input,
       textarea {
-        font-size: 0.8rem; // Adjust font size for better readability
+        font-size: 0.8rem; 
       }
     }
   }
