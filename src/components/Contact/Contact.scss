@@ -40,15 +40,15 @@
     button {
       width: 100%;
       padding: 1rem; // Add padding for better touch targets on mobile
-      background-color: $accent-color; // Optional: Add background color
-      color: white; // Optional: Text color for better contrast
+      background-color: #e6e6e6;
+      color: black;
       border: none; // Optional: Remove default border
       border-radius: 5px; // Optional: Rounded corners for button
       font-size: 1rem; // Optional: Font size for button
-      cursor: pointer; // Change cursor on hover
+      cursor: pointer;
 
       &:hover {
-        background-color: darken($accent-color, 10%); // Optional: Darken on hover
+        background-color: #a7a7a7 // Optional: Darken on hover
       }
     }
   }
