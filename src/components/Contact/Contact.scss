@@ -24,6 +24,7 @@
         border-radius: 5px;
         color: $text-color;
         font-size: 1rem;
+        font-family: 'Bricolage Grotesque';
         
         &:focus {
           outline: none;
@@ -46,6 +47,7 @@
       border-radius: 5px; // Optional: Rounded corners for button
       font-size: 1rem; // Optional: Font size for button
       cursor: pointer;
+      font-family: 'Bricolage Grotesque';
 
       &:hover {
         background-color: #a7a7a7 // Optional: Darken on hover
