@@ -2,13 +2,13 @@
 
 .skills {
   background-color: $primary-color;
-  padding: 2rem 0; // Add vertical padding for better spacing
+  padding: 2rem 0; 
 
   &-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    padding: 0 1rem; // Add horizontal padding for smaller screens
+    padding: 0 1rem; 
   }
   
   .skill-card {
@@ -16,15 +16,15 @@
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease; // Add transition for hover effect
+    transition: transform 0.3s ease;
 
     &:hover {
-      transform: translateY(-5px); // Slight lift effect on hover
+      transform: translateY(-5px); 
     }
 
     h3 {
       margin-bottom: 1rem;
-      font-size: 1.5rem; // Ensure consistent font size
+      font-size: 1.5rem; 
     }
     
     .skill-percentage {
@@ -42,31 +42,30 @@
     }
   }
 
-  // Media Queries for Responsiveness
   @media (max-width: 768px) {
     &-grid {
-      gap: 1.5rem; // Reduce gap for smaller screens
+      gap: 1.5rem; 
     }
 
     .skill-card {
-      padding: 1.5rem; // Reduce padding for smaller screens
+      padding: 1.5rem; 
 
       h3 {
-        font-size: 1.25rem; // Adjust heading size for smaller screens
+        font-size: 1.25rem; 
       }
     }
   }
 
   @media (max-width: 480px) {
     &-grid {
-      gap: 1rem; // Further reduce gap for very small screens
+      gap: 1rem;
     }
 
     .skill-card {
-      padding: 1rem; // Further reduce padding for very small screens
+      padding: 1rem; 
 
       h3 {
-        font-size: 1rem; // Further adjust heading size
+        font-size: 1rem; 
       }
     }
   }
