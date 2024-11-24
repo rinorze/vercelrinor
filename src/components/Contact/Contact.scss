@@ -7,7 +7,7 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 2rem; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px; 
   }
   
@@ -57,18 +57,19 @@
       padding: 1rem; 
       background-color: #e6e6e6;
       color: black;
-      border: none; 
+      border: none;
       border-radius: 5px; 
       font-size: 1rem; 
       cursor: pointer;
       font-family: 'Bricolage Grotesque';
 
       &:hover {
-        background-color: #a7a7a7 
+        background-color: #a7a7a7
       }
     }
   }
 
+  // Media Queries for Responsiveness
   @media (max-width: 768px) {
     &-content {
       padding: 1rem; 
